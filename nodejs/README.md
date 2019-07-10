@@ -46,11 +46,11 @@ npm init
 
 *Firefox*
 
-```curl https://raw.githubusercontent.com/Smartproxy/Smartproxy/master/selenium/nodejs/firefox/example.js > example.js```
+```curl https://raw.githubusercontent.com/Smartproxy/Selenium/master/nodejs/firefox/example.js > example.js```
 
 *Chrome*
 
-```curl https://raw.githubusercontent.com/Smartproxy/Smartproxy/master/selenium/nodejs/chrome/example.js > example.js```
+```curl https://raw.githubusercontent.com/Smartproxy/Selenium/master/nodejs/chrome/example.js > example.js```
 
 4. You should now see your project folder populated with *example.js* file.
 
