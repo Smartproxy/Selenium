@@ -29,11 +29,11 @@ cd selenium_ruby
 
 *Firefox*
 
-```curl https://raw.githubusercontent.com/Smartproxy/Smartproxy/master/selenium/ruby/firefox/example.rb > example.rb```
+```curl https://raw.githubusercontent.com/Smartproxy/Selenium/master/ruby/firefox/example.rb > example.rb```
 
 *Chrome*
 
-```curl https://raw.githubusercontent.com/Smartproxy/Smartproxy/master/selenium/ruby/chrome/example.rb > example.rb```
+```curl https://raw.githubusercontent.com/Smartproxy/Selenium/master/ruby/chrome/example.rb > example.rb```
 
 4. You should now see your project folder populated with *example.rb* file.
 
