@@ -34,21 +34,21 @@ You can run it using these steps:
 2. Using a terminal of your choice navigate to the projects directory.
 3. Run the cURL command to download the code or copy it directly from the repository by clicking on the preferred WebDriver hyperlink above.
 
-[*Firefox*](https://raw.githubusercontent.com/Smartproxy/Smartproxy/master/selenium/csharp/firefox/example.cs)
+[*Firefox*](https://raw.githubusercontent.com/Smartproxy/Selenium/master/csharp/firefox/example.cs)
 
 ```
-curl https://raw.githubusercontent.com/Smartproxy/Smartproxy/master/selenium/csharp/firefox/example.cs > example.cs
+curl https://raw.githubusercontent.com/Smartproxy/Selenium/master/csharp/firefox/example.cs > example.cs
 ```
 
-<img src="https://i.imgur.com/pdoz0b9.png">
+<img src="https://content.screencast.com/users/JohanSP/folders/Jing/media/ba4cb475-16db-4b83-a60e-7a19759b3613/smartproxy-selenium-firefox-csharp-example-github-curl.png" alt="Smartproxy selenium integration firefox csharp example github curl">
 
-[*Chrome*](https://raw.githubusercontent.com/Smartproxy/Smartproxy/master/selenium/csharp/chrome/example.cs)
+[*Chrome*](https://raw.githubusercontent.com/Smartproxy/Selenium/master/csharp/chrome/example.cs)
 
 ```
-curl https://raw.githubusercontent.com/Smartproxy/Smartproxy/master/selenium/csharp/chrome/example.cs > example.cs
+curl https://raw.githubusercontent.com/Smartproxy/Selenium/master/csharp/chrome/example.cs > example.cs
 ```
 
-<img src="https://i.imgur.com/NvGcgpL.png">
+<img src="https://content.screencast.com/users/JohanSP/folders/Jing/media/d5d58493-509f-4d79-9b10-12f94b3c34c0/smartproxy-selenium-chrome-csharp-example-github-curl.png" alt="Smartproxy selenium integration chrome csharp example github curl">
 
 4. You should see a new file named example.cs in your project folder.
 
