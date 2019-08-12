@@ -48,7 +48,7 @@ cd selenium_ruby
 
 To configure the endpoint you would like to use, change the example Gate endpoint in within punctuation marks(''):
 
-<img src="https://i.imgur.com/irXotBO.png">
+<img src="https://i.imgur.com/irXotBO.png" alt="smartproxy selenium ruby http proxy configuration example">
 
 ### Usage
 
