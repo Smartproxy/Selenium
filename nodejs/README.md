@@ -65,7 +65,7 @@ npm init
 
 To configure our example script with a different endpoint simply edit the `let addr =` line in within punctuation marks('') as in example:
 
-<img src="https://i.imgur.com/rBL5rWw.png">
+<img src="https://i.imgur.com/rBL5rWw.png" alt="smartproxy selenium node.js http proxy configuration example">
 
 ### Usage
 
