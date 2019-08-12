@@ -74,7 +74,7 @@ HttpProxy = "gate.smartproxy.com:7000"
 HttpProxy = "http://gate.smartproxy.com:7000"
 ```
 
-<img src="https://i.imgur.com/R0CPyut.png">
+<img src="https://i.imgur.com/R0CPyut.png" alt="smartproxy selenium http proxy setup">
 
 ### Testing
 
