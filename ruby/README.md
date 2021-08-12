@@ -42,7 +42,7 @@ cd selenium_ruby
 
 ```curl https://raw.githubusercontent.com/Smartproxy/Selenium/master/ruby/chrome/example.rb > example.rb```
 
-4. You should now see your project folder populated with *example.rb* file.
+3. You should now see your project folder populated with *example.rb* file.
 
 ### Configuration
 
