@@ -36,6 +36,7 @@ Note that you will need to install at least one of the above WebDrivers in the [
 mkdir node_selenium
 cd node_selenium
 npm init
+npm install selenium-webdriver
 ```
 <img src="https://i.imgur.com/53kgOXn.png">
 
