@@ -80,13 +80,13 @@ Note that Chrome and Firefox has different attributes for that, thus your reques
 *Firefox*
 
 ```
-browser = webdriver.Firefox(executable_path=r'PATH', proxy=smartproxy())
+browser = webdriver.Firefox(service=Service(GeckoDriverManager().install()), proxy=smartproxy())
 ```
 
 *Chrome*
 
 ```
-browser = webdriver.Chrome(executable_path=r'PATH', desired_capabilities=smartproxy())
+browser = webdriver.Chrome(service=Service(ChromeDriverManager().install()), desired_capabilities=smartproxy())
 ```
 
 *Optional*
