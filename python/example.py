@@ -5,9 +5,9 @@ from webdriver_manager.chrome import ChromeDriverManager
 from webdriver_manager.firefox import GeckoDriverManager
 from selenium.webdriver.common.proxy import Proxy, ProxyType
 
-HOSTNAME = 'gb.smartproxy.com'
-PORT = '30000'
-DRIVER = 'FIREFOX'
+HOSTNAME = ''
+PORT = ''
+DRIVER = '' # 'CHROME' or 'FIREFOX'
 
 def smartproxy():
   prox = Proxy()
