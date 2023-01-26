@@ -1,18 +1,34 @@
 from selenium import webdriver
-from selenium_python import get_driver_settings, smartproxy
+from selenium.webdriver.firefox.service import Service
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
-from selenium.webdriver.firefox.service import Service
 from webdriver_manager.firefox import GeckoDriverManager
+from selenium.webdriver.common.proxy import Proxy, ProxyType
+
+HOSTNAME = 'gb.smartproxy.com'
+PORT = '30000'
+DRIVER = 'FIREFOX'
+
+def smartproxy():
+  prox = Proxy()
+  prox.proxy_type = ProxyType.MANUAL
+  prox.http_proxy = '{hostname}:{port}'.format(hostname = HOSTNAME, port = PORT)
+  prox.ssl_proxy = '{hostname}:{port}'.format(hostname = HOSTNAME, port = PORT)
+  if DRIVER == 'FIREFOX':
+    capabilities = webdriver.DesiredCapabilities.FIREFOX
+  elif DRIVER == 'CHROME':
+    capabilities = webdriver.DesiredCapabilities.CHROME
+  prox.add_to_capabilities(capabilities)
+  return capabilities
 
 def webdriver_example():
-  driver = get_driver_settings()
-  if driver['DRIVER'] == 'FIREFOX':
+  if DRIVER == 'FIREFOX':
     browser = webdriver.Firefox(service=Service(GeckoDriverManager().install()), proxy=smartproxy())
-  elif driver['DRIVER'] == 'CHROME':
+  elif DRIVER == 'CHROME':
     browser = webdriver.Chrome(service=Service(ChromeDriverManager().install()), desired_capabilities=smartproxy())
   browser.get('http://ip.smartproxy.com/')
   print(browser.page_source)
-  browser.close()
+  browser.quit()
+
 if __name__ == '__main__':
   webdriver_example()
