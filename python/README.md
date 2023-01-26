@@ -26,7 +26,7 @@ Optional:
 - [Chrome WebDriver](https://sites.google.com/a/chromium.org/chromedriver/downloads)
 - [Firefox WebDriver](https://github.com/mozilla/geckodriver/releases)
 
-Note that you need to have at least one of the above drivers to continue your progress.
+Note that either of these drivers will be installed automatically when running our example.py code.
 
 ### Installation
 
@@ -35,47 +35,41 @@ Once you have all the prerequisites ready, create your project folder:
 ```
 mkdir your_project
 ```
-<img src="https://i.imgur.com/6US2PJs.png">
+<img src="https://snipboard.io/jWxpiu.jpg">
 
-When project directory is setup, you download our script for proxy authentication:
-
+When project directory is setup, you can download our script example.py:
 1. Open Terminal/Command Prompt window.
 2. Navigate to the main directory of your project folder using `cd your_project`
-3. Download our proxy middleware using the following command: `curl https://raw.githubusercontent.com/Smartproxy/Selenium/master/python/selenium_python.py > selenium_python.py`
-<img src="https://i.imgur.com/PBHO2wF.png">
-4. You should now see your project folder populated with *selenium_python.py* file.
+3. Download our script using the following command: `curl https://raw.githubusercontent.com/Smartproxy/Selenium/master/python/example.py > example.py`
+<img src="https://snipboard.io/4SdKnL.jpg">
+4. You should now see your project folder populated with *example.py* file.
 
 
 ### Configuration
 
-To configure our script for proxy authentication you will need to define required values.
+Only configuration required for our script are the values bellow:
 
 ```
 HOSTNAME = ''
 PORT = ''
 DRIVER = ''
-DRIVER_PATH = ''
 ```
 
 You can get information for `HOSTNAME` and `PORT` on our [users dashboard pannel](https://dashboard.smartproxy.com/).
 
-The configuration guidelines for `DRIVER` and `DRIVER_PATH` can be found in the code itself.
+The configuration for `DRIVER` value can be either 'CHROME' or 'FIREFOX'. This will determine if 'chromedriver' or 'geckodriver' will be installed and used during the process.
 
-<img src="https://i.imgur.com/JrexozP.png">
+<img src="https://snipboard.io/IrE1eu.jpg">
 
 ### Usage
 
-To start using our proxy configuration script for Selenium you will need to import the `get_driver_settings` and `smartproxy` from `selenium_python` package.
+The script consists of two functions `smartproxy()` - which handles the proxy authentication and `webdriver_example()` - which installs required drivers and gets a response from your target, in this case the target is `http://ip.smartproxy.com/`
 
 ```
-from selenium_python import get_driver_settings, smartproxy
+browser.get('http://ip.smartproxy.com/')
 ```
 
-If you selected a different name for `selenium_python.py` file, make sure to change it when importing as well.
-
-To call the function for proxy authentication simply use `smartproxy()`
-
-Note that Chrome and Firefox has different attributes for that, thus your requests should look along these lines:
+Note that Chrome and Firefox have different attributes for proxy authentication, thus your requests should look along these lines:
 
 *Firefox*
 
@@ -89,30 +83,10 @@ browser = webdriver.Firefox(service=Service(GeckoDriverManager().install()), pro
 browser = webdriver.Chrome(service=Service(ChromeDriverManager().install()), desired_capabilities=smartproxy())
 ```
 
-*Optional*
-
-Our `selenium_python.py` file comes with `get_driver_settings()` function which will return you an array of options which you have setup in the `selenium_python()` file itself for DRIVER settings.
-
-The following variables are available in the returned array:
-
-```
-DRIVER_SETTINGS['DRIVER']
-DRIVER_SETTINGS['DRIVER_PATH']
-```
-
-*Make sure to assign them to another variable when calling the function itself*
-
 ### Testing
 
-If you want to run a quick test with our proxy configuration, you can download our `example.py` file using the following command:
-
-```
-curl https://raw.githubusercontent.com/Smartproxy/Selenium/master/python/example.py > example.py
-```
-<img src="https://content.screencast.com/users/JohanSP/folders/Jing/media/3c5a26dc-839a-4882-a47e-dce85fbb0358/smartproxy-selenium-python-code-sample-github-curl.png">
-In order to run it, simply execute `python example.py` command while in your project directory.
-<img src="https://i.imgur.com/BFzywfC.png">
-*Note that the `example.py` file should be in the same directory as `selenium_python.py` file.*
+In order to run our script, simply execute `python3 example.py` command while in your project directory.
+<img src="https://snipboard.io/sPyz1D.jpg">
 
 ## Need help?
 Email - sales@smartproxy.com
