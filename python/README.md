@@ -30,7 +30,7 @@ Note that either of these drivers will be installed automatically when running o
 
 ### Installation
 
-Once you have all the prerequisites ready, create your project folder:
+Once you have all the prerequisites ready, open Terminal/Command Prompt window and create your project folder:
 
 ```
 mkdir your_project
@@ -38,11 +38,10 @@ mkdir your_project
 <img src="https://snipboard.io/jWxpiu.jpg">
 
 When project directory is setup, you can download our script example.py:
-1. Open Terminal/Command Prompt window.
-2. Navigate to the main directory of your project folder using `cd your_project`
-3. Download our script using the following command: `curl https://raw.githubusercontent.com/Smartproxy/Selenium/master/python/example.py > example.py`
+1. Navigate to the main directory of your project folder using `cd your_project`
+2. Download our script using the following command: `curl https://raw.githubusercontent.com/Smartproxy/Selenium/master/python/example.py > example.py`
 <img src="https://snipboard.io/4SdKnL.jpg">
-4. You should now see your project folder populated with *example.py* file.
+3. You should now see your project folder populated with *example.py* file.
 
 
 ### Configuration
