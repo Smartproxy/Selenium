@@ -7,7 +7,7 @@ from selenium.webdriver.common.proxy import Proxy, ProxyType
 
 HOSTNAME = ''
 PORT = ''
-DRIVER = '' # 'CHROME' or 'FIREFOX'
+DRIVER = ''
 
 def smartproxy():
   prox = Proxy()
