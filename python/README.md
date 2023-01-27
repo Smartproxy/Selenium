@@ -15,7 +15,7 @@ To continue further development with this tool, make sure to read their [documen
 
 *Unfortunately, Selenium itself does not support `username:password` authentication for `HTTP/HTTPs` proxies, thus you will need to have your IP whitelisted.*
 
-You can do that by following guidlines listed [here](https://help.smartproxy.com/docs/proxy-authentication).
+You can do that by following guidlines listed [here](https://help.smartproxy.com/docs/residential-authentication-methods#section-whitelisted-ip).
 
 ### Prerequisites
 
