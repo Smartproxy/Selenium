@@ -52,7 +52,7 @@ You can get information for `HOSTNAME` and `PORT` on our [users dashboard pannel
 
 The configuration for `DRIVER` value can be either 'CHROME' or 'FIREFOX'. This will determine if 'chromedriver' or 'geckodriver' will be installed and used during the process.
 
-<img src="https://snipboard.io/IrE1eu.jpg">
+<img src="https://snipboard.io/IO2tPD.jpg">
 
 ### Usage
 
