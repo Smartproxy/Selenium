@@ -22,12 +22,6 @@ You can do that by following guidlines listed [here](https://help.smartproxy.com
 - [Python](https://www.python.org/downloads/)
 - [Selenium](https://seleniumhq.github.io/selenium/docs/api/py/index.html#installing)
 
-Optional:
-- [Chrome WebDriver](https://sites.google.com/a/chromium.org/chromedriver/downloads)
-- [Firefox WebDriver](https://github.com/mozilla/geckodriver/releases)
-
-Note that either of these drivers will be installed automatically when running our example.py code.
-
 ### Installation
 
 Once you have all the prerequisites ready, open Terminal/Command Prompt window and create your project folder:
@@ -84,8 +78,15 @@ browser = webdriver.Chrome(service=Service(ChromeDriverManager().install()), des
 
 ### Testing
 
+Before proceeding with the testing, you will need to install the `webdriver_manager` using the command bellow:
+```
+pip3 install webdriver_manager
+```
+
 In order to run our script, simply execute `python3 example.py` command while in your project directory.
 <img src="https://snipboard.io/sPyz1D.jpg">
+
+Note: for machines running Windows, execute `python example.py` command instead.
 
 ## Need help?
 Email - sales@smartproxy.com
