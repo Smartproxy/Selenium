@@ -1,5 +1,5 @@
 <p align="center">
-    <a href="https://smartproxy.com/"><img src="https://snipboard.io/3IyORg.jpg" alt="Smartproxy logo" width="200" height="50"></a>
+    <a href="https://smartproxy.com/"><img src="https://snipboard.io/3IyORg.jpg" alt="Smartproxy logo"></a>
   </a>
 </p>
 
