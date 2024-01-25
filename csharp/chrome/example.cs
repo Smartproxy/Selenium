@@ -16,18 +16,16 @@ class Program
         {
             Kind = ProxyKind.Manual,
             IsAutoDetect = false,
-            HttpProxy = "http://gate.smartproxy.com:7000"
+            HttpProxy = "http://gate.smartproxy.com:7000"       //Proxy host:port configuration
         };
         options.Proxy = proxy;
 
         IWebDriver driver = new ChromeDriver(options);
-        driver.Navigate().GoToUrl("http://ip.smartproxy.com/");
+        driver.Navigate().GoToUrl("http://ip.smartproxy.com/"); //Target website
         var getBody = driver.FindElement(By.TagName("body"));
         var getBodyText = getBody.Text;
 
         Console.WriteLine(getBodyText);
-        Console.WriteLine("Click any key to exit..");
-        Console.ReadKey();
 
         driver.Quit();
     }
