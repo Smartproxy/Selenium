@@ -58,15 +58,11 @@ Make sure that you download the script accordingly to which WebDriver you want t
 curl https://raw.githubusercontent.com/Smartproxy/Selenium/master/java/firefox/example.java > example.java
 ```
 
-<img src="https://content.screencast.com/users/JohanSP/folders/Jing/media/9867533b-ed3e-44af-852c-c1cdc3ea6013/smartproxy-selenium-firefox-java-example-github-curl.png" alt="smartproxy curl selenium firefox java code sample">
-
 *Chrome*
 
 ```
 curl https://raw.githubusercontent.com/Smartproxy/Selenium/master/java/chrome/example.java > example.java
 ```
-
-<img src="https://content.screencast.com/users/JohanSP/folders/Jing/media/e1fa1683-b035-4ad7-b9e5-91a1c0fe2bce/smartproxy-selenium-chrome-java-example-github-curl.png" alt="smartproxy curl selenium chrome java code sample">
 
 ### Configuration
 
