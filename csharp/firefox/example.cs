@@ -10,7 +10,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        FirefoxOptions options = new FirefoxOptions();
+        FirefoxOptions options = new FirefoxOptions();           //Configures the Geckodriver
 
         var proxy = new Proxy
         {
@@ -20,9 +20,9 @@ class Program
         };
         options.Proxy = proxy;
 
-        IWebDriver driver = new FirefoxDriver(options);
+        IWebDriver driver = new FirefoxDriver(options);          //Initializes the configured Geckodriver
         driver.Navigate().GoToUrl("http://ip.smartproxy.com/");  //Target website
-        var getBody = driver.FindElement(By.TagName("body"));
+        var getBody = driver.FindElement(By.TagName("body"));    //Select desired Element from your target website
         var getBodyText = getBody.Text;
 
         Console.WriteLine(getBodyText);
