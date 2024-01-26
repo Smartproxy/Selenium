@@ -14,7 +14,7 @@ public class Example {
 
 	public static void main(String[] args) {
 		
-		String ProxyServer = "gate.smartproxy.com";
+		String ProxyServer = "gate.smartproxy.com";   //Proxy host:port configuration
 		int ProxyPort = 7000;
 		
 		String sHttpProxy = ProxyServer + ":" + ProxyPort;
@@ -34,7 +34,7 @@ public class Example {
 		options.merge(options);    
 		
 		WebDriver driver=new ChromeDriver(service, options);
-		driver.get("http://ip.smartproxy.com/");
+		driver.get("http://ip.smartproxy.com/");         //Target website
 	    WebElement body = driver.findElement(By.tagName("body"));
 	    String bodyText = body.getText();
 		System.out.println(bodyText);
