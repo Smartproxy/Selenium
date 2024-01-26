@@ -3,7 +3,7 @@ require('chromedriver');
 var webdriver = require('selenium-webdriver'), By = webdriver.By,
     until = webdriver.until,  chrome = require("selenium-webdriver/chrome");
 
-let addr = 'gate.smartproxy.com:7000'
+let addr = 'gate.smartproxy.com:7000'          //Proxy host:port configuration
 let opt = new chrome.Options().addArguments(`--proxy-server=http://${addr}`)
 
 var driver = new webdriver.Builder()
@@ -11,7 +11,7 @@ var driver = new webdriver.Builder()
  .setChromeOptions(opt)
  .build();
 
-driver.get('http://ip.smartproxy.com/')
+driver.get('http://ip.smartproxy.com/')        //Target website
 
 var textPromise = driver.findElement(webdriver.By.css('body')).getText();
 textPromise.then((text) => {
