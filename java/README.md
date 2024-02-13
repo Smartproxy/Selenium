@@ -9,13 +9,13 @@
 
 ### Disclaimer
 
-Selenium is a browser automation tool. This particular repository only covers Selenium setup for Java based programming language.
+Selenium is a browser automation tool. This particular repository only covers Selenium setup using the Java programming language.
 
-To continue further development with this tool, make sure to read their [documentation](https://seleniumhq.github.io/selenium/docs/api/java/index.html) for Java.
+To continue further development with this tool, read Selenium's official [documentation](https://seleniumhq.github.io/selenium/docs/api/java/index.html) for Java.
 
-*Unfortunately, Selenium itself does not support `username:password` authentication for `HTTP/HTTPs` proxies, thus you will need to have your IP whitelisted.*
+*Unfortunately, Selenium itself doesn't support `username:password` authentication for `HTTP/HTTPs` proxies; therefore, you'll need to have your IP whitelisted.*
 
-You can do that by following guidlines listed [here](https://help.smartproxy.com/docs/residential-authentication-methods).
+You can do that by following the guidelines listed [here](https://help.smartproxy.com/docs/residential-authentication-methods).
 
 ### Prerequisites
 
@@ -28,29 +28,29 @@ Optional:
 - [Chrome WebDriver](https://sites.google.com/a/chromium.org/chromedriver/downloads)
 - [Firefox WebDriver](https://github.com/mozilla/geckodriver/releases)
 
-Note that you need to have at least one of the above drivers to continue your progress.
+You'll need at least one of the above drivers to continue with the next steps.
 
 ### Installation
 
-This particular code was built with [Eclipse](https://www.eclipse.org/) which will be used to build and launch the application.
+This code was built with [Eclipse](https://www.eclipse.org/), which will be used to build and launch the application.
 
-If you feel like using something else or executing the script with `javac` command, you may need to install [JAVA JRE](https://www.oracle.com/technetwork/java/javase/downloads/server-jre8-downloads-2133154.html).
+If you feel like using something else or executing the script with the `javac` command, you may need to install [JAVA JRE](https://www.oracle.com/technetwork/java/javase/downloads/server-jre8-downloads-2133154.html).
 
-Once you have all the prerequisites ready, create your project folder:
+Once you have all of the prerequisites ready, create your project folder:
 
 ```
 mkdir your_project
 ```
 <img src="https://i.imgur.com/6US2PJs.png">
 
-When project directory is setup, you can now download our example script for Selenium.
+When the project directory is set up, you can now download our example script for Selenium.
 
-Make sure that you download the script accordingly to which WebDriver you want to use:
+Make sure that you download the script according to which WebDriver you want to use:
 
-1. Open Terminal/Command Prompt window.
+1. Open the Terminal/Command Prompt window.
 2. Navigate to the main directory of your project folder using `cd your_project`
 3. Download one of the examples below.
-4. You should now see your project folder populated with *example.java* file.
+4. You should now see your project folder populated with the *example.java* file.
 
 *Firefox*
 
@@ -69,19 +69,19 @@ curl https://raw.githubusercontent.com/Smartproxy/Selenium/master/java/chrome/ex
 To configure the proxy, simply change the following strings in the code:
 
 ```
-String ProxyServer = "gate.smartproxy.com"; #Location you want to target
-int ProxyPort = 7000; #Port for session
+String ProxyServer = "gate.smartproxy.com"; # Location you want to target
+int ProxyPort = 7000; # Port for session
 ```
 
 <img src="https://i.imgur.com/RfCa9xV.png" alt="smartproxy selenium java http proxy setup">
 
 ### Testing
 
-If everything is done correctly, after running the code, selected WebDriver will apear with a new IP from the proxy service:
+If everything is done correctly, the selected WebDriver will appear with a new IP from the proxy service after running the code:
 
 <img src="https://i.imgur.com/EUbzHh4.png">
 
-You will also get a printed output of the IP in the Console:
+You'll also get a printed output of the IP in the Console:
 
 <img src="https://i.imgur.com/tBbOAlA.png">
 
