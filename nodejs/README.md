@@ -9,13 +9,13 @@
 
 ### Disclaimer
 
-Selenium is a browser automation tool. This particular repository only covers Selenium setup for Node.js(Javascript) based programming language.
+Selenium is a browser automation tool. This repository only covers Selenium setup for the Node.js (Javascript) programming language.
 
-To continue further development with this tool, make sure to read their [documentation](https://github.com/SeleniumHQ/selenium/tree/master/javascript/node/selenium-webdriver).
+To continue further development with this tool, make sure to read the official Selenium [documentation](https://github.com/SeleniumHQ/selenium/tree/master/javascript/node/selenium-webdriver).
 
-*Unfortunately, Selenium itself does not support `username:password` authentication for `HTTP/HTTPs` proxies, thus you will need to have your IP whitelisted.*
+*Unfortunately, Selenium itself doesn't support `username:password` authentication for `HTTP/HTTPs` proxies; therefore you'll need to have your IP whitelisted.*
 
-You can do that by following guidlines listed [here](https://help.smartproxy.com/docs/residential-authentication-methods).
+You can do that by following the guidelines listed [here](https://help.smartproxy.com/docs/residential-authentication-methods).
 
 ### Prerequisites
 
@@ -26,7 +26,7 @@ Optional:
 - [Chrome WebDriver](https://www.npmjs.com/package/chromedriver#building-and-installing)
 - [Firefox WebDriver](https://www.npmjs.com/package/geckodriver#install)
 
-Note that you will need to install at least one of the above WebDrivers in the [Installation](#installation) part.
+You'll need to install at least one of the above WebDrivers in the [Installation](#installation) part.
 
 ### Installation
 
@@ -40,7 +40,7 @@ npm install selenium-webdriver
 ```
 <img src="https://i.imgur.com/53kgOXn.png">
 
-2. When project directory is setup, you will need to install one of the WebDrivers from the [Prerequisites](#prerequisites) section.
+2. When the project directory is set up, you'll need to install one of the WebDrivers from the [Prerequisites](#prerequisites) section.
 
 *Firefox*
 
@@ -50,7 +50,7 @@ npm install selenium-webdriver
 
 <img src="https://i.imgur.com/ALgnAQf.png">
 
-3. Download our example script accordingly to the WebDriver you are using, by using one of these commands: 
+3. Download the example script according to the WebDriver you are using with one of these commands: 
 
 *Firefox*
 
@@ -60,19 +60,19 @@ npm install selenium-webdriver
 
 ```curl https://raw.githubusercontent.com/Smartproxy/Selenium/master/nodejs/chrome/example.js > example.js```
 
-4. You should now see your project folder populated with *example.js* file.
+4. Your project folder should now be populated with the *example.js* file.
 
 ### Configuration
 
-To configure our example script with a different endpoint simply edit the `let addr =` line in within punctuation marks('') as in example:
+To configure the example script with a different endpoint, simply edit the `let addr =` line in within punctuation marks('') as in the example:
 
 <img src="https://i.imgur.com/rBL5rWw.png" alt="smartproxy selenium node.js http proxy configuration example">
 
 ### Usage
 
-If you did everything correctly, you can simply test our script by running `node example.js` command while in your project folder.
+You can test the script by running the `node example.js` command while in your project folder.
 
-A browser window will apear with the targeted website, and a proxy IP should be visible in the console output:
+A browser window will appear with the targeted website, and a proxy IP should be visible in the console output:
 
 <img src="https://i.imgur.com/7Na6wEN.png">
 
