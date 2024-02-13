@@ -9,36 +9,36 @@
 
 ### Disclaimer
 
-Selenium is a browser automation tool. This particular repository only covers Selenium setup for C# based programming language.
+Selenium is a browser automation tool. This particular repository only covers Selenium setup for the C# programming language.
 
-To continue further development with this tool, make sure to read their [documentation](https://seleniumhq.github.io/selenium/docs/api/dotnet/index.html) for C#.
+To continue further development with this tool, read the Selenium [documentation](https://seleniumhq.github.io/selenium/docs/api/dotnet/index.html) for C#.
 
-*Unfortunately, Selenium itself does not support `username:password` authentication for `HTTP/HTTPs` proxies, thus you will need to have your IP whitelisted.*
+*Unfortunately, Selenium itself doesn't support `username:password` authentication for `HTTP/HTTPs` proxies; therefore you will need to have your IP whitelisted.*
 
-You can do that by following guidlines listed [here](https://help.smartproxy.com/docs/residential-authentication-methods).
+You can do that by following the guidelines listed [here](https://help.smartproxy.com/docs/residential-authentication-methods).
 
 ### Prerequisites
 
-To run these particular examples, we used Visual Studio 19 to download Webdrivers and Selenium package itself using C# NuGet:
+To run these particular examples, use Visual Studio 19 to download WebDrivers and the Selenium package itself using C# NuGet:
 
 * [Visual Studio with Visual Basic](https://docs.microsoft.com/en-us/visualstudio/ide/quickstart-visual-basic-console?view=vs-2019)
 
-If you are using something else, you will need to download these packages seperately:
+If you are using something else, you'll need to download these packages separately:
 
 - [Selenium](https://www.seleniumhq.org/download/)
 - [Chrome WebDriver](https://sites.google.com/a/chromium.org/chromedriver/downloads)
 - [Firefox WebDriver](https://github.com/mozilla/geckodriver/releases)
 
-Note that you need to have at least one of the above drivers to continue your progress.
+You'll need at least one of the above drivers to continue with the next steps.
 
 ### Installation
 
-This particular code was built with [Visual Studio with Visual Basic](https://docs.microsoft.com/en-us/visualstudio/ide/quickstart-visual-basic-console?view=vs-2019) which will be used to build and launch the application.
+This particular code was built with [Visual Studio with Visual Basic](https://docs.microsoft.com/en-us/visualstudio/ide/quickstart-visual-basic-console?view=vs-2019), which will be used to build and launch the application.
 
 You can run it using these steps:
 
 1. Create a new Console Application.
-2. Using a terminal of your choice navigate to the projects directory.
+2. Navigate to the projects directory using the Terminal/Command Prompt.
 3. Run the cURL command to download the code or copy it directly from the repository by clicking on the preferred WebDriver hyperlink above.
 
 [*Firefox*](https://raw.githubusercontent.com/Smartproxy/Selenium/master/csharp/firefox/example.cs)
@@ -74,11 +74,10 @@ HttpProxy = "http://gate.smartproxy.com:7000"
 
 ### Testing
 
-If everything is done correctly, after running the code, selected WebDriver will apear with a new IP from the proxy service. You will also get a printed output of the IP in the Console:
+If everything is done correctly, the selected WebDriver will appear with a new IP from the proxy service after running the code. You'll also get a printed output of the IP in the Console:
 
 <img src="https://i.imgur.com/kQOZsn9.png">
 
 ## Need help?
 Email - sales@smartproxy.com
 <br><a href="https://smartproxy.com">Live chat 24/7</a>
-
