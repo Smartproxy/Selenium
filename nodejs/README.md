@@ -78,4 +78,4 @@ A browser window will appear with the targeted website, and a proxy IP should be
 
 ## Need help?
 Email - sales@smartproxy.com
-<br><a href="https://smartproxy.com">Live chat 24/7</a>
+<br><a href="https://direct.lc.chat/12092754/">Live chat 24/7</a>
