@@ -45,4 +45,4 @@ If you need any help or get stuck, feel free to contact us using one of the meth
 
 Email - sales@smartproxy.com
 
-<a href="https://smartproxy.com">Live chat 24/7</a>
+<a href="https://direct.lc.chat/12092754/">Live chat 24/7</a>
