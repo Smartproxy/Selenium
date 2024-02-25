@@ -25,7 +25,7 @@ You can do that by following the guidelines listed [here](https://help.smartprox
 - [Selenium Server Standalone JAR](https://selenium-release.storage.googleapis.com/3.9/selenium-server-standalone-3.9.1.jar)
 
 Optional:
-- [Chrome WebDriver](https://sites.google.com/a/chromium.org/chromedriver/downloads)
+- [Chrome WebDriver](https://chromedriver.chromium.org/downloads)
 - [Firefox WebDriver](https://github.com/mozilla/geckodriver/releases)
 
 You'll need at least one of the above drivers to continue with the next steps.
