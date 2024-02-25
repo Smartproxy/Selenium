@@ -26,7 +26,7 @@ To run these particular examples, use Visual Studio 19 to download WebDrivers an
 If you are using something else, you'll need to download these packages separately:
 
 - [Selenium](https://www.seleniumhq.org/download/)
-- [Chrome WebDriver](https://sites.google.com/a/chromium.org/chromedriver/downloads)
+- [Chrome WebDriver](https://chromedriver.chromium.org/downloads)
 - [Firefox WebDriver](https://github.com/mozilla/geckodriver/releases)
 
 You'll need at least one of the above drivers to continue with the next steps.
