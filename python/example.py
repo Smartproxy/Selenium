@@ -7,11 +7,11 @@ from webdriver_manager.chrome import ChromeDriverManager
 from webdriver_manager.firefox import GeckoDriverManager
 import time
 
-HOSTNAME = 'us.smartproxy.com'                                                       #Proxy host:port configuration
+HOSTNAME = 'us.smartproxy.com' #Proxy host:port configuration
 PORT = '10000'
-DRIVER = 'CHROME'                                                                    #Select 'CHROME' or 'FIREFOX'
+DRIVER = 'CHROME' #Select 'CHROME' or 'FIREFOX'
 
-def smartproxy():                                                                    #Selects appropriate driver and sets up proxy
+def smartproxy(): #Selects appropriate driver and sets up proxy
     if DRIVER == 'FIREFOX':
         options = FirefoxOptions()
     elif DRIVER == 'CHROME':
@@ -24,15 +24,15 @@ def smartproxy():                                                               
 
     return options
 
-def webdriver_example():                                                             #Installs the latest selected webdriver and uses proxy to reach target
+def webdriver_example(): #Installs the latest selected webdriver and uses proxy to reach target
     if DRIVER == 'FIREFOX':
         browser = webdriver.Firefox(service=Service(GeckoDriverManager().install()), 
                                     options=smartproxy())
     elif DRIVER == 'CHROME':
         browser = webdriver.Chrome(service=Service(ChromeDriverManager().install()), 
                                    options=smartproxy())
-    browser.get('http://ip.smartproxy.com/')                                         #Target URL
-    print(browser.page_source)                                                       #Prints out desired element of target URL
+    browser.get('http://ip.smartproxy.com/ip') #Target URL
+    print(browser.page_source) #Prints out desired element of target URL
     browser.quit()
 
 if __name__ == '__main__':
